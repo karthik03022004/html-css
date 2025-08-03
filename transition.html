@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task using Transitions </title>
+    <style>
+        .nav{
+            position: fixed;
+            width: 100%;
+            background-color: white;
+        }
+        .nav>h2,.gfg{
+            display: inline-block;
+            padding-left: 40px;
+            transition: color 0.1s ease;
+        }
+        .nav>h2:hover{
+            color:lightgreen;
+            transform: scale(1.2);
+        }
+        .gfg{
+            padding-left: 16%;
+           
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <h2>courses</h2>
+        <h2>Tutorials</h2>
+        <h2>Pratice</h2>
+        <h2>Jobs</h2>
+        
+        <div class="gfg">
+            <a href="">
+                <img src="https://media.geeksforgeeks.org/gfg-gg-logo.svg" alt="" width="40px">
+            </a>
+        </div>
+    </div>
+</body>
+</html>
