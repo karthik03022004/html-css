@@ -2,123 +2,160 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=|, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
-            padding:0;
-            margin:0;
-            box-sizing: border-box;
-        }
-        body{
-            text-align: center;
-        }
-        .header{
-            padding: 50px;
-            margin:10px,100px;
-        }
-        .parent1{
-            display: flex;
-        }
-        .parent2{
-            display: flex;
-        }
-        button {
-                           
-            width: 80px;        /* smaller width */
-            height: 30px;       /* smaller height */
-            font-size: 12px;    /* smaller text */
-            padding: 5px 10px;
-        }
-        .but{
-            margin:100px;
-            padding:100px,100px,100px,100px;
-        }
-        h1{
-            margin: 50px;
-            padding:10px,10px,10px,10px;
+       
+        .nav{
+            width: 100%;
+            position: fixed;
+            top:0px;
+            background-color: whitesmoke;
+            z-index: 3;
             
         }
+        .nav_i,.myfood,.mail{
+            display: inline-block;
+        }
+        .food{
+            width:100%
+        }
+        .food1,.food2,.food3,.food4{
+            display: inline-block;
+            width:24%
+        }
+        .food img{
+            width: 300px;
+        }
+        .items{
+            width:100%;
+        }
+        .items>.item1{
+            display: inline-block;
+            width:24%;
+        }
+        .items img{
+             width: 300px;
+        }
+        .tail{
+            width:100%;
+            margin:0;
+            background-color: aqua;
+        }
+        .footer,.blogs,.tags{
+            top:0px;
+            display: inline-block;
+            width:30%;
+            
+        }
+        .tags>.footer{
+            top:0;
+        }
         
-        
-        
-        
-        
+        .blogs>img{
+            display: inline-block;
+        }
     </style>
 </head>
 <body>
-    <div class="header">
-    <center style="font-size: large;">
-        <h3>My Food</h3></center>
+    <div class="nav">
+       <a href="#tail"> <img src="https://tse2.mm.bing.net/th/id/OIP.u_dpBnOVjS0-JVMhA5fqQQHaHk?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="" width="50px"class="nav_i"></a>
+        <h1 class="myfood" style="padding-left: 45%;">My Food</h1>
+        <p class="mail" style="padding-left: 30%;">Mail</p>
     </div>
-    <div class="parent1" >
-         <div class="child1">
-            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="sandwich" width="320"height="350">
-            <h2>The Perfect Sandwich, A Real NYC Classic</h2>
+    <div class="sp" style="padding-top: 100px;">
+
+    </div>
+    <div class="food">
+        <div class="food1">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="">
+            <h1>The Perfect Sandwich, A Real NYC Classic</h1>
             <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
         </div>
-        <div class="child2">
-            <img src="https://www.w3schools.com/w3images/steak.jpg" alt="" width="300"height="350">
-            <h2>Let Me Tell You About This Steak</h2>
+        <div class="food2">
+            <img src="https://www.w3schools.com/w3images/steak.jpg" alt="">
+            <h1>Let Me Tell You About This Steak</h1>
             <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
         </div>
-        <div class="child3">
-            <img src="https://www.w3schools.com/w3images/cherries.jpg" alt=""  width="300"height="350">
-            <h2>Cherries, interrupted</h2>
-            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.What else?</p>
+        <div class="food3">
+            <img src="https://www.w3schools.com/w3images/cherries.jpg" alt="">
+            <h1>Cherries, interrupted</h1>
+            <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+            <p style="padding-top: 10px;"><center>What else?</center></p>
+
         </div>
-        <div class="child4">
-            <img src="https://www.w3schools.com/w3images/wine.jpg" alt="" width="300"height="350">
-            <h2>Once Again, Robust Wine and Vegetable Pasta</h2>
+        <div class="food4" style="padding-bottom: 18px;">
+            <img src="https://www.w3schools.com/w3images/wine.jpg" alt="">
+            <h1>Once Again, Robust Wine, Vegetable Pasta</h1>
+            <p>wine</p>
             <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
         </div>
+
     </div>
-    <div class="parent2">
-        <div class="child1">
-            <img src="https://www.w3schools.com/w3images/popsicle.jpg" alt="" width="320"height="350">
-            <h2>All I Need Is a Popsicle</h2>
+    <div class="sp" style="padding-top: 60px;"></div>
+    <div class="items">
+        <div class="item1">
+            <img src="https://www.w3schools.com/w3images/popsicle.jpg" alt="" style="padding-bottom: 19px;">
+            <h1>All I Need Is a Popsicle</h1>
             <p>Lorem ipsum text praesent tincidunt ipsum lipsum.</p>
         </div>
-        <div class="child2">
-            <img src="https://www.w3schools.com/w3images/salmon.jpg" alt=""width="320"height="350">
-            <h2>Salmon For Your Skin</h2>
-            <p>Once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
+        <div class="item1">
+            <img src="https://www.w3schools.com/w3images/salmon.jpg" alt="">
+            <h1>Salmon For Your Skin</h1>
+            <p>once again, some random text to lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
         </div>
-        <div class="child3">
-            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="" width="320"height="350">
-            <h2>The Perfect Sandwich, A Real Classic</h2>
+        <div class="item1">
+            <img src="https://www.w3schools.com/w3images/sandwich.jpg" alt="">
+            <h1>The Perfect Sandwich</h1>
             <p>Just some random text, lorem ipsum text praesent tincidunt ipsum lipsum.</p>
         </div>
-        <div class="child4">
-            <img src="https://www.w3schools.com/w3images/croissant.jpg" alt="" width="320"height="350">
-            <h2>Le French</h2>
+        <div class="item1">
+            <img src="https://www.w3schools.com/w3images/croissant.jpg" alt="">
+            <h1>Le French</h1>
             <p>Lorem lorem lorem lorem ipsum text praesent tincidunt ipsum lipsum.</p>
         </div>
-        
     </div>
+    <div class="sp" style="padding-top: 220px;"></div>
     <hr>
-    <br>
-    <div class="but">
-        <button>
-        <p>1</p>
-    </button>
-    <button>
-        <p>2</p>
-    </button>
-    <button>
-        <p>3</p>
-    </button>
+   <center><h3>About Me, The Food Man</h3></center> 
+   <div class="sp" style="padding-top: 30px;"></div>
+   <div class="chef">
+    <center>
+        <img src="https://www.w3schools.com/w3images/chef.jpg" alt="">
+    </center>
 
-    </div>
-    <hr>
+   </div>
+   <center><h2>I am Who I Am!</h2></center>
+   <div class="sp" style="padding-bottom: 10px;"></div>
+   <center><p>With Passion For Real, Good Food</p></center>
+   <center><p style="margin: 50px 50px 80px 80px;">Just me, myself and I, exploring the universe of unknownment. I have a heart of love and an interest of lorem ipsum and mauris neque quam blog. I want to share my world with you. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla. Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p></center>
+   <div class="sp" style="padding-top: 30px;"></div>
+   <hr >
+   
+   <div class="tail">
+    <div class="footer" style="padding-right: 50px;">
+    <h1>Footer</h1>
+    <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+    <p>powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"><ins>w3.css</ins></a></p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Architecto ipsam facere repudiandae nemo facilis illum inventore blanditiis, cupiditate in, saepe fuga culpa assumenda nesciunt eius unde, recusandae veniam fugit expedita.food templatefood templatefood templatefood templatefood template</p>
+   </div>
+    <div class="blogs">
+    <h1>Blog Post</h1>
+    <img src="https://www.w3schools.com/w3images/workshop.jpg" alt="" width="50px">
+    <b>Lorem</b>
+    <p>Sed mattis nunc</p>
+    <img src="https://www.w3schools.com/w3images/gondol.jpg" alt="" width="50px">
+    <b>Ipsum</b>
+    <p>Praes tinci sed</p>
+   </div>
+   <div class="tags">
+    <h1>Important Tags</h1>
+    <div style="background-color: black;"><p style="color: white;">Travel</p></div>
+    
+   </div>
 
-    <h1>
-        About Me , The Food Man
-    </h1>
-
-    <img src="https://www.w3schools.com/w3images/chef.jpg" alt="">
-    <h2 style="margin: 30px; padding: 50px,30px;">Who I am ?</h2>
-    <p>With Passion For Real, Good Food</p>
+   </div>
+   
 
 </body>
 </html>

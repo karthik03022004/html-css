@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ol{
+            color:brown
+            
+    }
+           
+    
+    p{
+        color:black
+    }
+    ul{
+        background-color: lightblue;
+    }
+    #list{
+        color:darkslateblue
+    }
+    .head{
+        background-color: lightskyblue;
+    }
+    
+
+    </style>
+    
+</head>
+<body>
+    <center class="head"><h1 style="color:lightcoral">CSS(cascading Style sheets)</h1> </center>
+    <center class="head"><p >Cascading means flow of execution,style means adding designs.</p></center>
+    <ol>
+        <li><h4>Main purpose is to create a responsive web design and animations.</h4>
+        <li><h4>CSS is used for to make webpages attractive by adding color to the text and at background also.</h4></li></li>
+    </ol>
+    <hr>
+    <p>To implement CSS we have 3 methods:
+    </p>
+    <ul style="background-color: lightpink; color:blue">
+        <li>Inline:we implement our  styling at element in a single line.</li>
+        <li>Internal: At head tag we crate a style tag and implement our styles.</li>
+        <li>External: we create a new a new file with extension(.css) and there we implememt our styling.</li>
+        <hr>
+    </ul>
+    <marquee behavior="scroll" direction="right"><mark>NOTE: When we apply styling in 3 methods inline,internal,external to give priroity we use <b>(!important)</b> beside color so, it thinks it is mandatory.</mark></marquee>
+    <center><h3 style="color: darkviolet;"><ins>SELECTORS,PROPERTIES,VALUES:</ins></h3></center>
+    <ul type="circle">
+        <li><h4>Selectors are nothing but It gives stylings to the targeted elements only.</h4></li>
+        <li><h4>Properties describes where the color be applied like background or the text etc.</h4></li>
+        <li><h4>color describes what type of colors we are using on text background etc.. ,For example light-blue,dark violetEtc..</h4></li>
+    </ul>
+    <center>About SELECTORS</center>
+    <h3>There are 5 types of selectors:</h3>
+    <ol id="list">
+        <li>Simple</li>
+        <li>Combinators</li>
+        <li>Attributes</li>
+        <li>pseudoclass</li>
+        <li>Pesudoelements</li>
+    </ol>
+    <h4>again in simple selectors we have 5 types:</h4>
+    <h2>Simple Selectors:</h2>
+    <ul>
+        <li>id(represented as #)->it uniquely apply stylings</li>
+        <li>class(represented as .)-> to apply styles to same elements we use grouping.</li>
+        <li>element -> we mention element as selector</li>
+        <li>grouping(mentioned by ,)-> we take multiple selectors </li>
+        <li>universal(*)-> applies colors to whole body</li>
+    </ul>
+    <h2>Priority:id>class>ele=grouping>universal</h2>
+</body>
+</html>
+
+
+

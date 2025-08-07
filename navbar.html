@@ -74,9 +74,10 @@
          .parent>.item2>img{
             position: relative;
         }
-        .parent>.item1>p{
+        .item1>p{
             position: absolute;
-            top: 1220px;
+            z-index: 1;
+            top: 2%;
             background-color: black;
             color: white;
             
@@ -103,6 +104,7 @@
         .box{
             width:100%;
              padding-left: 40px;
+             position: relative;
         }
         .box1,.box2,.box3,.box4{
             display: inline-block;
@@ -115,25 +117,25 @@
         }
         .box>.box1>p{
             position: absolute;
-            top: 1430px;
+            top:0px;
             background-color: black;
             color:white;
         }
         .box>.box2>p{
             position: absolute;
-            top: 1430px;
+            top:0px;
             background-color: black;
             color:white;
         }
         .box>.box3>p{
             position: absolute;
-            top: 1430px;
+            top:0px;
             background-color: black;
             color:white;
         }
         .box>.box4>p{
             position: absolute;
-            top: 1430px;
+            top: 0px;
             background-color: black;
             color:white;
         }
@@ -158,17 +160,7 @@
         }
         .contact>button{
             margin: 15px 30px 15px 15px;
-        }
-        .lastimg>img{
-            margin: 30px 30px 30px 30px;
-           
-        }
-        
-
-        
-
-       
-        
+        }    
         
     </style>
 </head>
@@ -182,7 +174,7 @@
         </div>
     </div>
     <div class="brimg">
-        <img src="https://www.w3schools.com/w3images/architect.jpg" alt="">
+        <img src="https://www.w3schools.com/w3images/architect.jpg" alt="" width="100%">
         <b clas="ib">BR</b>
         <p class="bp">ARCHETTECTS</p>
     </div>
@@ -191,8 +183,8 @@
     </div>
     <div class="parent">
         <div class="item1">
-            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="">
-            <p>Brick house</p>
+            <img src="https://www.w3schools.com/w3images/house5.jpg" alt="" class="item1img">
+            <p class="item1p">Brick house</p>
         </div>
         <div class="item2">
             <img src="https://www.w3schools.com/w3images/house2.jpg" alt="">
@@ -293,7 +285,7 @@
 
     </div>
     <div class="lastimg">
-        <img src="https://www.w3schools.com/w3images/map.jpg" alt="" class="i">
+        <img src="https://www.w3schools.com/w3images/map.jpg" alt="" class="i" width="100%">
 
     </div>
 

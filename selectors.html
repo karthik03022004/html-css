@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS-class examples</title>
+    <style>
+        .parent > h1{
+            color:darkorchid;
+            background-color: lightblue;
+        }
+        .sub-container1 > #bird{
+            color: blue;
+        }
+        .sub-container > .sub-container1 > p{
+            color: darkslategrey;
+        }
+        .parent p{
+            background-color: lightcoral;
+
+        }
+        h3+h3{
+            color:burlywood
+        }
+        h1~h2{
+            color:blue
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <h1>pegion</h1>
+        <p>wall</p>
+        <h2>King Kong</h2>
+        <h3>Gorilla</h3>
+        <h3>Kookoo</h3>
+        <div class="sub-container">
+            <p>Eagle</p>
+            <p>Parrot</p>
+            <div class="sub-container1">
+                <p id="bird">King Fisher</p>
+                <p>Tiger</p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

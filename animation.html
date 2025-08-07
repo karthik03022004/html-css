@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: lightblue;
+        }
+        .sun{
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background-color: orange;
+            left: 45%;
+            
+            position: relative;
+            z-index: 100;
+            
+        }
+        .back{
+            width:150px;
+            height:150px;
+            border-radius: 50%;
+            position: absolute;
+            top: 0;
+            background-color: yellow;
+            animation-name: move;
+            animation-delay: 0.7s;
+            animation-duration: 2s;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease;
+            animation-iteration-count: infinite;
+            
+        }
+        @keyframes move {
+            from{
+               
+                top: 0px;
+                left:45%;
+
+            }
+            to{
+                width: 200px;
+                height: 200px;
+                top: 30px;
+                left: 44%;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="sun">
+         
+    </div>
+    <div class="back"></div>
+
+   
+    
+</body>
+</html>
